@@ -122,3 +122,40 @@ flower-fl/
 
 If you need additional flags, custom boilerplate, or alternative layouts, please open an issue or submit a pull request.
 
+## Git Ignore
+
+To prevent dataset images (and other generated files) from being committed, add a `.gitignore` at your project root with:
+
+```gitignore
+# Ignore all client data images and labels
+/client/data/**
+
+# (Optional) keep an empty placeholder file
+!/client/data/**/.gitkeep
+
+# Ignore dataset archives
+*.zip
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Logs and temporary files
+*.log
+temp*/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Flower checkpoints or other model artifacts
+*.pth
+*.pt
+```
+
+## Contributing
+
+If you need additional flags, custom boilerplate, or alternative layouts, please open an issue or submit a pull request.
