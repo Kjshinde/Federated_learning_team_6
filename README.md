@@ -118,9 +118,7 @@ flower-fl/
 
 ---
 
-## Contributing
 
-If you need additional flags, custom boilerplate, or alternative layouts, please open an issue or submit a pull request.
 
 ## Git Ignore
 
@@ -155,7 +153,60 @@ temp*/
 *.pth
 *.pt
 ```
+## 🔒 Windows Firewall & Port Forwarding
 
-## Contributing
+To allow external clients to reach your Flower server on port 8080, you need to:
 
-If you need additional flags, custom boilerplate, or alternative layouts, please open an issue or submit a pull request.
+1. **Open the port in Windows Defender Firewall**  
+2. **Forward that port on your router**  
+
+---
+
+### 1. Windows Firewall Configuration
+
+#### A. Using the GUI
+1. Press ⊞ Win, type **“Windows Defender Firewall with Advanced Security”**, and press ENTER.  
+2. In the left pane, click **Inbound Rules**.  
+3. In the right pane, click **New Rule…**  
+4. Select **Port**, click **Next**.  
+5. Choose **TCP**, select **Specific local ports**, enter `8080`, click **Next**.  
+6. Select **Allow the connection**, click **Next**.  
+7. Check the network profiles you trust (e.g. **Domain**, **Private**), click **Next**.  
+8. Give the rule a name (e.g. “Flower FL Server TCP 8080”), click **Finish**.
+
+#### B. Using PowerShell (Admin)
+Open PowerShell **as Administrator** and run:
+```powershell
+New-NetFirewallRule `
+  -DisplayName "Flower FL Server TCP 8080" `
+  -Direction Inbound `
+  -Protocol TCP `
+  -LocalPort 8080 `
+  -Action Allow `
+  -Profile Private,Domain
+  ```
+
+  
+  
+## 🔒 Ubuntu Firewall & Port Forwarding
+
+To expose your Flower server on port 8080 from an Ubuntu machine, you’ll:
+
+1. Open the port in the OS firewall (UFW)  
+2. (If this Ubuntu box is acting as your network gateway) Enable IP forwarding and add an iptables NAT rule  
+
+---
+
+### 1. Allow TCP 8080 in UFW
+
+```bash
+# Check UFW status (enable if it’s inactive)
+sudo ufw status verbose
+sudo ufw enable   # only if ufw is inactive
+
+# Allow Flower’s port
+sudo ufw allow 8080/tcp
+
+# Reload & verify
+sudo ufw reload
+sudo ufw status
