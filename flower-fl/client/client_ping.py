@@ -1,21 +1,27 @@
 #!/usr/bin/env python3
 import socket
-import sys
-
-if len(sys.argv) != 2:
-    print("Usage: python client_ping.py <server-ip>")
-    sys.exit(1)
-
-SERVER_IP = sys.argv[1]
-PORT      = 8080
+import argparse
 
 def main():
+    parser = argparse.ArgumentParser(description="Ping client for Internet access")
+    parser.add_argument(
+        "server_host",
+        help="Public IP or hostname of your server"
+    )
+    parser.add_argument(
+        "-p", "--port", type=int, default=8080,
+        help="TCP port the server is listening on"
+    )
+    parser.add_argument(
+        "-m", "--message", default="HELLO from client",
+        help="Message payload to send"
+    )
+    args = parser.parse_args()
+
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
-        print(f"Connecting to {SERVER_IP}:{PORT}…")
-        client.connect((SERVER_IP, PORT))
-        # Send a dummy packet
-        client.sendall(b"HELLO from client")
-        # Wait for ACK
+        print(f"Connecting to {args.server_host}:{args.port}…")
+        client.connect((args.server_host, args.port))
+        client.sendall(args.message.encode())
         data = client.recv(1024)
         print(f"Received from server: {data!r}")
 
