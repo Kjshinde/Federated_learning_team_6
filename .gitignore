@@ -1,2 +1,29 @@
 
 /flower_framework_testing/flower_framework_testing/krutyanjay_testing/flower_venv/
+
+/client/data/**
+
+# (Optional) keep an empty placeholder file
+!/client/data/**/.gitkeep
+
+# Ignore dataset archives
+*.zip
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Logs and temporary files
+*.log
+temp*/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Flower checkpoints or other model artifacts
+*.pth
+*.pt
