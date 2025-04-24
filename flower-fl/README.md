@@ -167,3 +167,20 @@ flower-fl/client/data/client_<ID>/
 
 If you need additional flags, custom boilerplate, or alternative layouts, please open an issue or submit a pull request.
 
+
+# How to use server and client .py scripts
+
+```cd flower-fl/server
+python server.py \
+  --port 8080 \
+  --num-rounds 10
+  ```
+
+  ```
+  cd flower-fl/client
+python client.py \
+  --client-id 1 \
+  --server-address 192.168.1.50:8080 \
+  --num-classes 5
+```
+
