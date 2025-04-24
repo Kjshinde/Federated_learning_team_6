@@ -1,12 +1,13 @@
 
 /flower_framework_testing/flower_framework_testing/krutyanjay_testing/flower_venv/
 
-/client/data/**
+# Don't keep the raw image file
+/flower-fl/client/data/**
 
 # (Optional) keep an empty placeholder file
 !/client/data/**/.gitkeep
 
-# Ignore dataset archives
+# Ignore dataset archives (cause zip archives are more than 100MB)
 *.zip
 
 # Python cache and bytecode
