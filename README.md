@@ -210,3 +210,13 @@ sudo ufw allow 8080/tcp
 # Reload & verify
 sudo ufw reload
 sudo ufw status
+```
+
+# How to use Client and server sim script
+python client_sim.py --server <SERVER_IP>:8080
+
+
+cd flower-fl/server
+python server_sim.py --port 8080 --rounds 3
+
+sim push test
