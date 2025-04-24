@@ -1,12 +1,14 @@
+# client.py
 #!/usr/bin/env python3
 import os
 import sys
-# Ensure the project root is on PYTHONPATH so we can import common/
+# Ensure the project root is on PYTHONPATH
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import argparse
 import flwr as fl
 import torch
+import numpy as np
 
 from common.models.cnn import build_model
 from common.utils.data import load_client_data
@@ -21,17 +23,19 @@ class FLClient(fl.client.NumPyClient):
         self.test_loader = test_loader
 
     def get_parameters(self):
-        # Return model parameters as a list of NumPy arrays
-        return [val.cpu().numpy() for _, val in self.model.state_dict().items()]
+        params = [val.cpu().numpy() for _, val in self.model.state_dict().items()]
+        print("→ get_parameters(): sending", params)
+        return params
 
     def set_parameters(self, parameters):
-        # Convert list of NumPy arrays back to model state_dict
-        params_dict = zip(self.model.state_dict().keys(), parameters)
-        state_dict = {k: torch.tensor(v) for k, v in params_dict}
+        state_dict = {
+            k: torch.tensor(v) 
+            for k, v in zip(self.model.state_dict().keys(), parameters)
+        }
         self.model.load_state_dict(state_dict, strict=True)
 
     def fit(self, parameters, config):
-        # Update model with received parameters
+        print("→ fit(): received", parameters, "with config", config)
         self.set_parameters(parameters)
         self.model.train()
         optimizer = torch.optim.SGD(self.model.parameters(), lr=config.get("lr", 0.01))
@@ -44,11 +48,13 @@ class FLClient(fl.client.NumPyClient):
                 loss = torch.nn.functional.cross_entropy(outputs, y)
                 loss.backward()
                 optimizer.step()
-        # Return updated parameters and number of samples trained on
-        return self.get_parameters(), len(self.train_loader.dataset), {}
+
+        new_params = [val.cpu().numpy() for _, val in self.model.state_dict().items()]
+        print("→ fit(): returning", new_params)
+        return new_params, len(self.train_loader.dataset), {}
 
     def evaluate(self, parameters, config):
-        # Update model then evaluate on local test set
+        print("→ evaluate(): received", parameters)
         self.set_parameters(parameters)
         self.model.eval()
         loss, correct, total = 0.0, 0, 0
@@ -62,7 +68,7 @@ class FLClient(fl.client.NumPyClient):
                 correct += (preds == y).sum().item()
         loss /= total
         accuracy = correct / total
-        # Return evaluation results
+        print(f"→ evaluate(): loss={loss:.4f}, accuracy={accuracy:.4f}")
         return float(loss), total, {"accuracy": accuracy}
 
 
@@ -89,6 +95,7 @@ def main():
 
     # Start Flower client
     client = FLClient(model, train_loader, test_loader)
+    print(f"Connecting to Flower server at {args.server_address}")
     fl.client.start_numpy_client(
         server_address=args.server_address,
         client=client,
