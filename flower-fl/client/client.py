@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 import os
 import sys
-# Ensure the project root is on PYTHONPATH
+# Ensure the project root is on PYTHONPATH so we can import common/
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import argparse
@@ -22,14 +22,15 @@ class FLClient(fl.client.NumPyClient):
         self.train_loader = train_loader
         self.test_loader = test_loader
 
-    def get_parameters(self):
+    # Accept the `config` argument to match Flower's expected signature
+    def get_parameters(self, config):
         params = [val.cpu().numpy() for _, val in self.model.state_dict().items()]
         print("→ get_parameters(): sending", params)
         return params
 
     def set_parameters(self, parameters):
         state_dict = {
-            k: torch.tensor(v) 
+            k: torch.tensor(v)
             for k, v in zip(self.model.state_dict().keys(), parameters)
         }
         self.model.load_state_dict(state_dict, strict=True)
@@ -90,10 +91,10 @@ def main():
 
     # Build the model for the specified number of classes
     model = build_model(num_classes=args.num_classes)
-    # Load this client's data loaders
+    # Load this client's train/test data
     train_loader, test_loader = load_client_data(client_id=args.client_id)
 
-    # Start Flower client
+    # Start the Flower client
     client = FLClient(model, train_loader, test_loader)
     print(f"Connecting to Flower server at {args.server_address}")
     fl.client.start_numpy_client(

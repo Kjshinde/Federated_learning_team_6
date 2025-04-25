@@ -219,4 +219,12 @@ python client_sim.py --server <SERVER_IP>:8080
 cd flower-fl/server
 python server_sim.py --port 8080 --rounds 3
 
-sim push test
+# how to use client and server .py files
+
+```
+cd flower-fl/client
+python client.py \
+  --client-id 1 \
+  --server-address 192.168.1.50:8080 \
+  --num-classes 5
+```
