@@ -228,3 +228,8 @@ python client.py \
   --server-address 192.168.1.50:8080 \
   --num-classes 5
 ```
+
+```
+python server.py --port 8080 --num-rounds 20
+```
+
