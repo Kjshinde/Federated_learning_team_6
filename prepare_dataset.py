@@ -17,8 +17,8 @@ import random
 import os
 
 # === User Configuration ===
-ZIP_FILE    = Path(r'C:\Users\kjshi\Desktop\ASU_sem_2\Intro_to_ml_with_fpga\Project\Federated_learning_team_6\ML dataset-20250426T225000Z-001.zip')  # Path to your zipped dataset
-CLIENT_ID   = 2                                # Unique numeric client ID
+ZIP_FILE    = Path(r'C:\Users\kjshi\Desktop\ASU_sem_2\Intro_to_ml_with_fpga\Project\Federated_learning_team_6\ML dataset-20250426T225000Z-002.zip')  # Path to your zipped dataset
+CLIENT_ID   = 3                                # Unique numeric client ID
 BASE_DIR    = Path('flower-fl') / 'client' / 'data'  # Base directory for client data
 FRACTION    = 0.2                              # Fraction of images per class to sample (0 < f ≤ 1)
 TRAIN_RATIO = 0.8                              # Fraction of sampled images for training

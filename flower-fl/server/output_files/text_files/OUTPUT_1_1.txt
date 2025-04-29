@@ -1,0 +1,99 @@
+WARNING :   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO :      Starting Flower server, config: num_rounds=10, no round_timeout
+INFO :      Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO :      [INIT]
+INFO :      Requesting initial parameters from one random client
+INFO :      Received initial parameters from one random client
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :      
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 10 round(s) in 115.32s
+INFO :      	History (loss, distributed):
+INFO :      		round 1: 1.5955256223678589
+INFO :      		round 2: 1.585795283317566
+INFO :      		round 3: 1.5770368576049805
+INFO :      		round 4: 1.5680468082427979
+INFO :      		round 5: 1.5600829124450684
+INFO :      		round 6: 1.5502604246139526
+INFO :      		round 7: 1.5406358242034912
+INFO :      		round 8: 1.5314081907272339
+INFO :      		round 9: 1.5211668014526367
+INFO :      		round 10: 1.5114376544952393
+INFO :      
+Starting Flower server on 0.0.0.0:8080, rounds=10

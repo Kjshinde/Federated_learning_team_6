@@ -233,3 +233,15 @@ python client.py \
 python server.py --port 8080 --num-rounds 20
 ```
 
+# How to use new server.py
+```
+# Default FedAvg, 10 rounds
+python server.py
+
+# 25 rounds, use FedAdam
+python server.py --num-rounds 25 --strategy FedAdam
+
+# 50 rounds, try the adaptive Yogi optimizer
+python server.py -r 50 -s FedYogi
+
+```

@@ -1,0 +1,729 @@
+WARNING :   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO :      Starting Flower server, config: num_rounds=100, no round_timeout
+INFO :      Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO :      [INIT]
+INFO :      Requesting initial parameters from one random client
+INFO :      Received initial parameters from one random client
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :      
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 11]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 12]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 13]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 14]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 15]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 16]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 17]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 18]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 19]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 20]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 21]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 22]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 23]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 24]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 25]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 26]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 27]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 28]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 29]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 30]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 31]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 32]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 33]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 34]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 35]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 36]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 37]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 38]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 39]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 40]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 41]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 42]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 43]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 44]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 45]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 46]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 47]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 48]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 49]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 50]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 51]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 52]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 53]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 54]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 55]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 56]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 57]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 58]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 59]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 60]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 61]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 62]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 63]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 64]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 65]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 66]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 67]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 68]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 69]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 70]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 71]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 72]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 73]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 74]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 75]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 76]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 77]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 78]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 79]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 80]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 81]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 82]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 83]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 84]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 85]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 86]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 87]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 88]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 89]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 90]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 91]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 92]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 93]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 94]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 95]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 96]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 97]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 98]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 99]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [ROUND 100]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_evaluate: received 1 results and 0 failures
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 100 round(s) in 1198.49s
+INFO :      	History (loss, distributed):
+INFO :      		round 1: 1.6011661291122437
+INFO :      		round 2: 1.5917974710464478
+INFO :      		round 3: 1.5840890407562256
+INFO :      		round 4: 1.5761668682098389
+INFO :      		round 5: 1.567615032196045
+INFO :      		round 6: 1.5588189363479614
+INFO :      		round 7: 1.5498324632644653
+INFO :      		round 8: 1.53867769241333
+INFO :      		round 9: 1.5276336669921875
+INFO :      		round 10: 1.5164955854415894
+INFO :      		round 11: 1.502782940864563
+INFO :      		round 12: 1.487182855606079
+INFO :      		round 13: 1.4709200859069824
+INFO :      		round 14: 1.4524275064468384
+INFO :      		round 15: 1.4315849542617798
+INFO :      		round 16: 1.4095698595046997
+INFO :      		round 17: 1.3826982975006104
+INFO :      		round 18: 1.3571022748947144
+INFO :      		round 19: 1.3257113695144653
+INFO :      		round 20: 1.2898184061050415
+INFO :      		round 21: 1.2696738243103027
+INFO :      		round 22: 1.2186036109924316
+INFO :      		round 23: 1.1923673152923584
+INFO :      		round 24: 1.1496275663375854
+INFO :      		round 25: 1.153840184211731
+INFO :      		round 26: 1.1106966733932495
+INFO :      		round 27: 1.0815664529800415
+INFO :      		round 28: 1.0413659811019897
+INFO :      		round 29: 1.0757592916488647
+INFO :      		round 30: 1.0146735906600952
+INFO :      		round 31: 1.0317531824111938
+INFO :      		round 32: 0.9775696396827698
+INFO :      		round 33: 0.969054102897644
+INFO :      		round 34: 0.9576751589775085
+INFO :      		round 35: 0.9209431409835815
+INFO :      		round 36: 0.9298582673072815
+INFO :      		round 37: 1.1049954891204834
+INFO :      		round 38: 1.0020678043365479
+INFO :      		round 39: 0.9425325989723206
+INFO :      		round 40: 1.0890589952468872
+INFO :      		round 41: 0.8995877504348755
+INFO :      		round 42: 0.9822146892547607
+INFO :      		round 43: 0.9764750599861145
+INFO :      		round 44: 0.883622407913208
+INFO :      		round 45: 0.9240140914916992
+INFO :      		round 46: 0.9549431800842285
+INFO :      		round 47: 0.8325875997543335
+INFO :      		round 48: 0.8361945152282715
+INFO :      		round 49: 0.9324727058410645
+INFO :      		round 50: 0.8928713202476501
+INFO :      		round 51: 0.8664955496788025
+INFO :      		round 52: 0.8271105289459229
+INFO :      		round 53: 1.0722941160202026
+INFO :      		round 54: 0.8666261434555054
+INFO :      		round 55: 0.8529964685440063
+INFO :      		round 56: 0.9940710067749023
+INFO :      		round 57: 1.173438549041748
+INFO :      		round 58: 0.9006943702697754
+INFO :      		round 59: 0.8171846866607666
+INFO :      		round 60: 0.8641479015350342
+INFO :      		round 61: 0.8637378215789795
+INFO :      		round 62: 0.994529664516449
+INFO :      		round 63: 0.8214160799980164
+INFO :      		round 64: 0.8793103098869324
+INFO :      		round 65: 0.8539823293685913
+INFO :      		round 66: 0.8666574954986572
+INFO :      		round 67: 1.084581971168518
+INFO :      		round 68: 0.7994590401649475
+INFO :      		round 69: 0.867306113243103
+INFO :      		round 70: 0.8849924206733704
+INFO :      		round 71: 0.8957535028457642
+INFO :      		round 72: 0.8281207084655762
+INFO :      		round 73: 0.9796880483627319
+INFO :      		round 74: 0.8983652591705322
+INFO :      		round 75: 1.073922038078308
+INFO :      		round 76: 0.8357511162757874
+INFO :      		round 77: 0.93312007188797
+INFO :      		round 78: 0.8386639356613159
+INFO :      		round 79: 0.9218987226486206
+INFO :      		round 80: 0.7691911458969116
+INFO :      		round 81: 0.9245439767837524
+INFO :      		round 82: 0.787469208240509
+INFO :      		round 83: 0.9955252408981323
+INFO :      		round 84: 0.7627122402191162
+INFO :      		round 85: 0.8545618653297424
+INFO :      		round 86: 0.8999871015548706
+INFO :      		round 87: 0.7655196785926819
+INFO :      		round 88: 1.1655681133270264
+INFO :      		round 89: 0.8236374258995056
+INFO :      		round 90: 0.8162548542022705
+INFO :      		round 91: 0.7675139904022217
+INFO :      		round 92: 0.7611449956893921
+INFO :      		round 93: 1.0089350938796997
+INFO :      		round 94: 0.7522327303886414
+INFO :      		round 95: 0.9128604531288147
+INFO :      		round 96: 0.8591035604476929
+INFO :      		round 97: 0.896055281162262
+INFO :      		round 98: 0.9151461720466614
+INFO :      		round 99: 0.945978045463562
+INFO :      		round 100: 0.9348827600479126
+INFO :      
+Starting Flower server on 0.0.0.0:8080, rounds=100

@@ -1,0 +1,204 @@
+WARNING :   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO :      Starting Flower server, config: num_rounds=25, no round_timeout
+INFO :      Flower ECE: gRPC server running (25 rounds), SSL is disabled
+INFO :      [INIT]
+INFO :      Requesting initial parameters from one random client
+INFO :      Received initial parameters from one random client
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :      
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 11]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 12]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 13]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 14]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 15]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 16]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 17]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 18]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 19]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 20]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 21]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 22]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 23]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 24]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [ROUND 25]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 25 round(s) in 303.38s
+INFO :      	History (loss, distributed):
+INFO :      		round 1: 1.6081649092110721
+INFO :      		round 2: 1.6027800115672024
+INFO :      		round 3: 1.5981957153840498
+INFO :      		round 4: 1.5940107838674025
+INFO :      		round 5: 1.5897778462279926
+INFO :      		round 6: 1.5851379036903381
+INFO :      		round 7: 1.5798955884846775
+INFO :      		round 8: 1.5743704329837451
+INFO :      		round 9: 1.568166513334621
+INFO :      		round 10: 1.561478541655974
+INFO :      		round 11: 1.5536117309873754
+INFO :      		round 12: 1.544636303728277
+INFO :      		round 13: 1.5346284210681915
+INFO :      		round 14: 1.5241368846459822
+INFO :      		round 15: 1.511872865936973
+INFO :      		round 16: 1.499070936983282
+INFO :      		round 17: 1.4862139414657245
+INFO :      		round 18: 1.47255617109212
+INFO :      		round 19: 1.4569646499373696
+INFO :      		round 20: 1.4393101280385798
+INFO :      		round 21: 1.422147344459187
+INFO :      		round 22: 1.3982843783768741
+INFO :      		round 23: 1.377106482332403
+INFO :      		round 24: 1.3538574088703503
+INFO :      		round 25: 1.3280465304851532
+INFO :      
+Starting Flower server on 0.0.0.0:8080, rounds=25
